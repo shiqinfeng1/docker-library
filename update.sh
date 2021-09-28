@@ -5,9 +5,7 @@
 CurrentDIR=$(cd "$(dirname "$0")" || exit;pwd)
 ImagesList=$CurrentDIR/image-list.txt
 ImagesListLen=$(cat ${ImagesList} | wc -l)
-name=""
 
-index=0
 for image in $(<${ImagesList}); do
     array=(${image//:/ })
     image0=${array[0]}

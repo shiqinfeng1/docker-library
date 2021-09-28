@@ -1,0 +1,5 @@
+
+kubesphere/flannel:v0.12.0
+coredns/coredns:1.6.9
+kubesphere/k8s-dns-node-cache:1.15.12
+openebs/provisioner-localpv:2.10.1

@@ -3,14 +3,16 @@
 #!/usr/bin/env bash
 
 ImagesList=(
-    quay.io/cephcsi/cephcsi:v3.3.1
-    k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.0.1
-    k8s.gcr.io/sig-storage/csi-resizer:v1.0.1
-    k8s.gcr.io/sig-storage/csi-snapshotter:v4.0.0
+    quay.io/cephcsi/cephcsi:v3.4.0
+    k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.2.0
+    k8s.gcr.io/sig-storage/csi-resizer:v1.2.0
+    k8s.gcr.io/sig-storage/csi-snapshotter:v4.1.1
     ceph/ceph:v15.2.11
-    rook/ceph:v1.6.2
-    k8s.gcr.io/sig-storage/csi-attacher:v3.0.2
-    k8s.gcr.io/sig-storage/csi-provisioner:v2.0.4
+    rook/ceph:v1.7.4
+    k8s.gcr.io/sig-storage/csi-attacher:v3.2.1
+    k8s.gcr.io/sig-storage/csi-provisioner:v2.2.2
+    quay.io/csiaddons/volumereplication-operator:v0.1.0
+    quay.io/ceph/ceph:v16.2.6
 )
 
 OPTION=$1

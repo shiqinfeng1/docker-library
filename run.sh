@@ -10,6 +10,7 @@ ImagesList=(
     ceph/ceph:v15.2.11
     rook/ceph:v1.6.2
     k8s.gcr.io/sig-storage/csi-attacher:v3.0.2
+    k8s.gcr.io/sig-storage/csi-provisioner:v2.0.4
 )
 
 OPTION=$1
@@ -54,4 +55,11 @@ if [ "${OPTION}" == "update" ]; then
 	update_images
 elif [ "${OPTION}" == "download" ]; then
 	download_images
+elif [ "${OPTION}" == "help" ]; then
+	echo "-----"
+    echo "./run.sh update      - 根据列表更新或创建dockerfile文件，并推送到github"
+    echo "                       执行完成后，需要在阿里云上创建镜像文件夹同名的镜像仓库，并设置自动构建镜像"
+    echo "./run.sh download    - 根据列表下载镜像到本地，并且标签为镜像列表中的定义"
+    echo "./run.sh help        - 显示本说明"
+    echo "-----"
 fi

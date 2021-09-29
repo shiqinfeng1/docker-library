@@ -1,3 +1,6 @@
-# DEPRECATED
-
-该仓库已经停止维护，新的自动同步工具已经构建完成，请移步 [mritd/gcr](https://github.com/mritd/gcr)
+echo "-----"
+echo "./run.sh update      - 根据列表更新或创建dockerfile文件，并推送到github"
+echo "                       执行完成后，需要在阿里云上创建镜像文件夹同名的镜像仓库，并设置自动构建镜像"
+echo "./run.sh download    - 根据列表下载镜像到本地，并且标签为镜像列表中的定义"
+echo "./run.sh help        - 显示本说明"
+echo "-----"
